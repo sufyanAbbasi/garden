@@ -1,7 +1,7 @@
 node_modules
-public/*.{d.ts,d.ts.map,js,js.map}
-public/*.d.ts
-public/*.d.ts.map
-public/*.js
-public/*.js.map
-!public/*.bundled.js
+docs/*.{d.ts,d.ts.map,js,js.map}
+docs/*.d.ts
+docs/*.d.ts.map
+docs/*.js
+docs/*.js.map
+!docs/*.bundled.js
