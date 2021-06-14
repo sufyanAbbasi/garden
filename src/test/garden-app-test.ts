@@ -1,16 +1,16 @@
-import {GardenApp} from '../garden-app.js';
+import { GardenApp } from "../garden-app.js";
 
-import {fixture, html} from '@open-wc/testing';
+import { fixture, html } from "@open-wc/testing";
 
 const assert = chai.assert;
 
-suite('garden-app', () => {
-  test('is defined', () => {
-    const el = document.createElement('garden-app');
+suite("garden-app", () => {
+  test("is defined", () => {
+    const el = document.createElement("garden-app");
     assert.instanceOf(el, GardenApp);
   });
 
-  test('renders with default values', async () => {
+  test("renders with default values", async () => {
     const el = await fixture(html`<garden-app></garden-app>`);
     assert.shadowDom.equal(
       el,
@@ -22,7 +22,7 @@ suite('garden-app', () => {
     );
   });
 
-  test('renders with a set name', async () => {
+  test("renders with a set name", async () => {
     const el = await fixture(html`<garden-app></garden-app>`);
     assert.shadowDom.equal(
       el,
@@ -34,9 +34,9 @@ suite('garden-app', () => {
     );
   });
 
-  test('handles a click', async () => {
+  test("handles a click", async () => {
     const el = (await fixture(html`<garden-app></garden-app>`)) as GardenApp;
-    const button = el.shadowRoot!.querySelector('button')!;
+    const button = el.shadowRoot!.querySelector("button")!;
     button.click();
     await el.updateComplete;
     assert.shadowDom.equal(
@@ -49,9 +49,9 @@ suite('garden-app', () => {
     );
   });
 
-  test('styling applied', async () => {
+  test("styling applied", async () => {
     const el = (await fixture(html`<garden-app></garden-app>`)) as GardenApp;
     await el.updateComplete;
-    assert.equal(getComputedStyle(el).paddingTop, '16px');
+    assert.equal(getComputedStyle(el).paddingTop, "16px");
   });
 });

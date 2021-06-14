@@ -53,9 +53,9 @@ title: <my-element> ⌲ Home
 `<my-element>` can be used with declarative rendering libraries like Angular, React, Vue, and lit-html
 
 ```js
-import {html, render} from 'lit-html';
+import { html, render } from "lit-html";
 
-const name = 'lit-html';
+const name = "lit-html";
 
 render(
   html`

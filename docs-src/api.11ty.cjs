@@ -5,13 +5,13 @@
 module.exports = class Docs {
   data() {
     return {
-      layout: 'page.11ty.cjs',
-      title: '<my-element> ⌲ Docs',
+      layout: "page.11ty.cjs",
+      title: "<my-element> ⌲ Docs",
     };
   }
 
   render(data) {
-    const customElements = data.api['11tydata'].customElements;
+    const customElements = data.api["11tydata"].customElements;
     const tags = customElements.tags;
     return `
       <h1>API</h1>
@@ -23,13 +23,13 @@ module.exports = class Docs {
           ${tag.description}
         </div>
         ${renderTable(
-          'Attributes',
-          ['name', 'description', 'type', 'default'],
+          "Attributes",
+          ["name", "description", "type", "default"],
           tag.attributes
         )}
         ${renderTable(
-          'Properties',
-          ['name', 'attribute', 'description', 'type', 'default'],
+          "Properties",
+          ["name", "attribute", "description", "type", "default"],
           tag.properties
         )}  
         ${
@@ -39,23 +39,23 @@ module.exports = class Docs {
            * when that is fixed, and element maintainers will hopefully have a
            * signal to update this file to add the neccessary columns.
            */
-          renderTable('Methods', ['name', 'description'], tag.methods)
+          renderTable("Methods", ["name", "description"], tag.methods)
         }
-        ${renderTable('Events', ['name', 'description'], tag.events)}    
-        ${renderTable('Slots', ['name', 'description'], tag.slots)}  
+        ${renderTable("Events", ["name", "description"], tag.events)}    
+        ${renderTable("Slots", ["name", "description"], tag.slots)}  
         ${renderTable(
-          'CSS Shadow Parts',
-          ['name', 'description'],
+          "CSS Shadow Parts",
+          ["name", "description"],
           tag.cssParts
         )}
         ${renderTable(
-          'CSS Custom Properties',
-          ['name', 'description'],
+          "CSS Custom Properties",
+          ["name", "description"],
           tag.cssProperties
         )}
         `
         )
-        .join('')}
+        .join("")}
     `;
   }
 };
@@ -66,23 +66,23 @@ module.exports = class Docs {
  */
 const renderTable = (name, properties, data) => {
   if (data === undefined) {
-    return '';
+    return "";
   }
   return `
     <h3>${name}</h3>
     <table>
       <tr>
-        ${properties.map((p) => `<th>${capitalize(p)}</th>`).join('')}
+        ${properties.map((p) => `<th>${capitalize(p)}</th>`).join("")}
       </tr>
       ${data
         .map(
           (i) => `
         <tr>
-          ${properties.map((p) => `<td>${i[p]}</td>`).join('')}
+          ${properties.map((p) => `<td>${i[p]}</td>`).join("")}
         </tr>
       `
         )
-        .join('')}
+        .join("")}
     </table>
   `;
 };
