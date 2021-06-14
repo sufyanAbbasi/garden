@@ -86,7 +86,7 @@ export class BlogPosts extends LitElement {
   }
 
   private onHashChange() {
-    this.shadowRoot!.querySelector(location.hash)?.scrollIntoView();
+    location.hash && this.shadowRoot!.querySelector(location.hash)?.scrollIntoView();
   }
 
   private async getPosts() {
