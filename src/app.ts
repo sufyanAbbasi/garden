@@ -1,3 +1,3 @@
-import "./blog_posts";
-import "./garden_app";
-import "./table-of-contents";
+import './blog-posts';
+import './garden-app';
+import './table-of-contents';
