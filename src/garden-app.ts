@@ -44,7 +44,7 @@ export class GardenApp extends LitElement {
           </app-toolbar>
           <slot name="drawer-content"></slot>
         </app-drawer>
-        <app-header-layout fullbleed>
+        <app-header-layout>
           <app-header slot="header">
             <app-toolbar>
               <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>

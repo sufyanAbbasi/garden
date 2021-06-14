@@ -1,15 +1,15 @@
 {
-  "name": "@lit/lit-starter-ts",
+  "name": "garden-blog",
   "private": true,
   "version": "0.0.1",
   "description": "A simple static content blog about my garden",
-  "main": "app.js",
-  "module": "app.js",
+  "main": "public/index.js",
+  "module": "public/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "clean": "rimraf app.{d.ts,d.ts.map,js,js.map} test/app.{d.ts,d.ts.map,js,js.map} test/app-test.{d.ts,d.ts.map,js,js.map} blog-posts.{d.ts,d.ts.map,js,js.map} test/blog-posts.{d.ts,d.ts.map,js,js.map} test/blog_post-_test.{d.ts,d.ts.map,js,js.map} garden-app.{d.ts,d.ts.map,js,js.map} test/garden-app.{d.ts,d.ts.map,js,js.map} test/garden-app-test.{d.ts,d.ts.map,js,js.map} table-of-contents.{d.ts,d.ts.map,js,js.map} test/table-of-contents.{d.ts,d.ts.map,js,js.map} test/table-of-contents_test.{d.ts,d.ts.map,js,js.map}",
+    "clean": "rimraf public/*.{d.ts,d.ts.map,js,js.map}",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts'",
     "lint:lit-analyzer": "lit-analyzer",
@@ -17,7 +17,7 @@
     "serve": "wds --watch",
     "test": "wtr",
     "test:watch": "npm run test -- --watch",
-    "checksize": "rollup -c ; cat app.bundled.js | gzip -9 | wc -c ; rm app.bundled.js"
+    "publish": "npm run clean && npm run build && rollup --config"
   },
   "keywords": [
     "web-components",
@@ -36,6 +36,7 @@
     "@polymer/paper-icon-button": "^3.0.2",
     "@polymer/paper-item": "^3.0.1",
     "@polymer/paper-listbox": "^3.0.1",
+    "@webcomponents/shadycss": "^1.10.2",
     "lit": "^2.0.0-rc.1",
     "lit-html": "^2.0.0-rc.2",
     "protobufjs": "~6.11.2"

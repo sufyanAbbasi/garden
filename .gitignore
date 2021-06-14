@@ -1,1 +1,7 @@
 node_modules
+public/*.{d.ts,d.ts.map,js,js.map}
+public/*.d.ts
+public/*.d.ts.map
+public/*.js
+public/*.js.map
+!public/*.bundled.js

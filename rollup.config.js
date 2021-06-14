@@ -1,18 +1,12 @@
-/**
- * @license
- * Copyright 2018 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */
-
 import summary from "rollup-plugin-summary";
-import { terser } from "rollup-plugin-terser";
+// import { terser } from "rollup-plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 
 export default {
-  input: "app.js",
+  input: "public/index.js",
   output: {
-    file: "app.bundled.js",
+    file: "public/index.bundled.js",
     format: "esm",
   },
   onwarn(warning) {
@@ -23,16 +17,17 @@ export default {
   plugins: [
     replace({ "Reflect.decorate": "undefined" }),
     resolve(),
-    terser({
-      ecma: 2017,
-      module: true,
-      warnings: true,
-      mangle: {
-        properties: {
-          regex: /^__/,
-        },
-      },
-    }),
+    // Minifying the bundle breaks the ShadyCSS ApplyShim
+    // terser({
+    //   ecma: 2017,
+    //   module: true,
+    //   warnings: true,
+    //   mangle: {
+    //     properties: {
+    //       regex: /^__/,
+    //     },
+    //   },
+    // }),
     summary(),
   ],
 };

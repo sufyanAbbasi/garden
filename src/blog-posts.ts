@@ -1,7 +1,7 @@
 import "@polymer/paper-card";
 import "@polymer/marked-element";
 
-import { LitElement, html, css } from "lit";
+import { LitElement, html, css, nothing } from "lit";
 import { until } from "lit-html/directives/until.js";
 import { customElement } from "lit/decorators.js";
 
@@ -61,6 +61,11 @@ export class BlogPosts extends LitElement {
       width: 75%;
     }
 
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+
     .date-header {
       margin: 30px;
     }
@@ -102,8 +107,9 @@ export class BlogPosts extends LitElement {
 
   private renderCard(title: string, imageUrl = "", alt = "", content: string) {
     return html`
-      <paper-card heading="${title}" image="${imageUrl}" alt="${alt}">
+      <paper-card heading="${title}">
         <div class="card-content">
+          ${imageUrl ? html`<img src="${imageUrl}" alt="${alt}">` : nothing}
           <marked-element>
             <div slot="markdown-html"></div>
             <script type="text/markdown">
