@@ -20249,7 +20249,7 @@ let BlogPosts = class BlogPosts extends h$2 {
     }
     onHashChange() {
         var _a;
-        (_a = this.shadowRoot.querySelector(location.hash)) === null || _a === void 0 ? void 0 : _a.scrollIntoView();
+        location.hash && ((_a = this.shadowRoot.querySelector(location.hash)) === null || _a === void 0 ? void 0 : _a.scrollIntoView());
     }
     async getPosts() {
         const posts = await getPostsByDate();
