@@ -1,44 +1,72 @@
 [
   {
-    "date": "2021-06-13",
-    "title": "My First Post",
-    "imageUrl": "",
-    "alt": "haha",
-    "content": "<h3>hello</h3><p>Wow this is so cool.</p>"
+    "date": "2021-03-31",
+    "title": "Starting out",
+    "imageUrl": "img/IMG_1769.JPG",
+    "alt": "A view of the garden",
+    "content": "\n> Here's what the plot looked like when I first got it in late March.\n\n### Origin Story\n\nOur great city, the city of Santa Clara, built an incredible park over what used to a holiday fair ground which was really a patch of ground that was used seasonally to hold a pumpkin patch and christmas trees. With this new park came a fantastic community garden with over 30 plots, outfitted with irrigation, tools, a composting bin, and even a beehive.\n\nI applied back in early 2020 and got waitlisted, but for the next garden season term in 2021, I got it! Thus begans our journey."
   },
   {
-    "date": "2021-06-13",
-    "title": "Followup to first Post",
-    "imageUrl": "",
-    "alt": "hoho",
-    "content": "<h3>hello</h3><p>Wow this is so cool.</p>"
+    "date": "2021-05-22",
+    "title": "A Garden is Born!",
+    "imageUrl": "img/IMG_1838.JPG",
+    "alt": "A view of the garden after planting some stuff",
+    "content": "\n### Starting the garden for real\n\nI had been sitting on the plot for a month... I was dealing with some stuff in my life so I didn't get a chance dedicate time to it. But I finally had an opportunity to prove myself at the Garden Cleanup Day, where I spent some time destroying the weeds around the garden.\n\nI took the opportunity to run down to [Yamagami Garden Center](https://www.yamagamis.com) and picked up a nice haul! Lots of types of peppers and tomatoes, including:\n- 2 ghost chili peppers (redundancy is key)\n- 4 types of tomatoes\n- Some herbs like basil, rosemary, and thyme to attract the nice bugs and keep the bad ones away\n- And a few succulents for aesthetics\n\nI kept some of the existing flowers which were in there; attracting more pollinators can't hurt.\n\nI'm proud to finally *finally* get started!"
   },
   {
-    "date": "2021-06-14",
-    "title": "Second Post",
-    "imageUrl": "",
-    "alt": "hoho",
-    "content": "<h3>hello</h3><p>Wow this is so cool.</p>"
+    "date": "2021-05-22",
+    "title": "A small desert garden",
+    "imageUrl": "img/IMG_1839.JPG",
+    "alt": "Succulents that we planted",
+    "content": "\n>Succulents and a few of the peppers we planted: ghost chili peppers, italian long peppers to name a few."
   },
   {
-    "date": "2021-06-14",
-    "title": "Followup to Second Post",
-    "imageUrl": "",
-    "alt": "hoho",
-    "content": "<h3>hello</h3><p>Wow this is so cool.</p>"
+    "date": "2021-05-22",
+    "title": "The other side of the plot",
+    "imageUrl": "img/IMG_1840.JPG",
+    "alt": "The other side of the plot",
+    "content": "\n>Tomatoes and herbs"
   },
   {
-    "date": "2021-06-15",
-    "title": "Third post",
-    "imageUrl": "",
-    "alt": "hoho",
-    "content": "<h3>hello</h3><p>Wow this is so cool.</p>"
+    "date": "2021-06-05",
+    "title": "#GardenGoals",
+    "imageUrl": "img/IMG_1855.JPG",
+    "alt": "A sunflower",
+    "content": "\n>An impressive sunflower in another plot. This is peak gardening right here."
   },
   {
-    "date": "2021-06-15",
-    "title": "Followup to Third Post",
-    "imageUrl": "img/tomato.jpg",
-    "alt": "hoho",
-    "content": "\n## This is rendered Markdown.\n# This is really crazy"
+    "date": "2021-06-09",
+    "title": "My first tomato!",
+    "imageUrl": "img/IMG_1877.JPG",
+    "alt": "A baby tomato",
+    "content": "\n>My first tomato plant! I hope it doesn't get eaten.\n\nI added some mulch to the plot to help keep the soil moist; the summer season is upon us and so is 90º+ weather."
+  },
+  {
+    "date": "2021-06-09",
+    "title": "Succulents are growing up",
+    "imageUrl": "img/IMG_1873.JPG",
+    "alt": "succulents",
+    "content": "\n>The succulents have started to push out of the ground."
+  },
+  {
+    "date": "2021-06-09",
+    "title": "The pepper plants are a little droopy",
+    "imageUrl": "img/IMG_1875.JPG",
+    "alt": "pepper plants",
+    "content": "\n> I heard that underwatering peppers make them extra spicy. Is that true?"
+  },
+  {
+    "date": "2021-06-09",
+    "title": "One of the tomato plants",
+    "imageUrl": "img/IMG_1876.JPG",
+    "alt": "tomato plant",
+    "content": ""
+  },
+  {
+    "date": "2021-06-09",
+    "title": "The other tomato plants",
+    "imageUrl": "img/IMG_1878.JPG",
+    "alt": "tomato plants",
+    "content": ""
   }
 ]
