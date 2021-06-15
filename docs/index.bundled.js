@@ -20286,12 +20286,12 @@ let BlogPosts = class BlogPosts extends h$2 {
 BlogPosts.styles = r$1 `
     paper-card {
       margin: 10px 30px;
+      max-width: 800px;
       width: 75%;
     }
 
     img {
       width: 100%;
-      max-width: 400px;
     }
 
     .date-header {

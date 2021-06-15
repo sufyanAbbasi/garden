@@ -57,12 +57,12 @@ export class BlogPosts extends LitElement {
   static styles = css`
     paper-card {
       margin: 10px 30px;
+      max-width: 800px;
       width: 75%;
     }
 
     img {
       width: 100%;
-      max-width: 400px;
     }
 
     .date-header {
