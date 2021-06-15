@@ -57,7 +57,7 @@ export class BlogPosts extends LitElement {
   static styles = css`
     paper-card {
       margin: 10px 30px;
-      max-width: 800px;
+      max-width: 600px;
       width: 75%;
     }
 
